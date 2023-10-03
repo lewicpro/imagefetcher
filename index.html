@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMEI Image Fetcher</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    
+    h1 {
+        color: #333;
+    }
+    
+    #imeiInput {
+        width: 200px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #A5111E;
+    }
+    
+    #fetchButton {
+        background-color: #A5111E;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    #imageContainer {
+        margin-top: 20px;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+</style>
+<body>
+    <h1>IMEI Image Fetcher</h1>
+   
+    <div style="display: flex; justify-content:center" >
+        <!-- <label for="imeiInput">Enter IMEI:</label> -->
+        <input type="text" id="imeiInput" placeholder="Enter IMEI">
+        <button id="fetchButton">Fetch Image</button>
+    </div>
+    
+    <div id="imageContainer">
+        <img id="placeholderImage" width="200" height="200" src="placeholder.png" alt="Phone Placeholder" style="display: none;">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
